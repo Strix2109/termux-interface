@@ -19,17 +19,18 @@
 
 #follow commands in Termux:
 
-*pkg update 
+* pkg update 
 
-*pkg upgrade -y
+* pkg upgrade -y
 
-*pkg install git -y 
+* pkg install git -y 
 
-*git clone https://github.com/Strix2109/hack-style.git
+* git clone https://github.com/Strix2109/hack-style.git
 
-*cd hack-style
+* cd hack-style
 
-*ls
+* ls
 
-*bash setup.sh
+* bash setup.sh
 
+Thanks for Visiting....
