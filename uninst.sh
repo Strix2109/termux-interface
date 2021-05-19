@@ -24,5 +24,5 @@ Upgrade packages:  pkg upgrade
 Learn more:        pkg help" > motd
 cd
 cd /$HOME
-figlet FemurTech
+figlet STRIX.D
 echo Now Your Termux is back to Original
