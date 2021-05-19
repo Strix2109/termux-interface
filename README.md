@@ -17,13 +17,19 @@
 
 ###  Installation in Termux
 
-follow commands in Termux:
+#follow commands in Termux:
 
 *pkg update 
+
 *pkg upgrade -y
+
 *pkg install git -y 
+
 *git clone https://github.com/Strix2109/hack-style.git
+
 *cd hack-style
+
 *ls
+
 *bash setup.sh
 
