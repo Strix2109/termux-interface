@@ -98,7 +98,7 @@ clear
 #Script starts
 #cd $HOME
 #cd termuxstyling
-echo Script made by:- Sant kr. (Admin of Strix Cyber Community)
+echo Script made by:- Strix Cyber Community
 #Uninstall
 if [ -e ".user.cfg" ]
 then
