@@ -98,7 +98,7 @@ clear
 #Script starts
 #cd $HOME
 #cd termuxstyling
-echo Script made by:- Dark Warrior
+echo Script made by:- Sant kr. (Admin of Strix Cyber Community)
 #Uninstall
 if [ -e ".user.cfg" ]
 then
@@ -134,7 +134,7 @@ then
 		Learn more:        pkg help" > motd
 		cd
 		cd /$HOME
-		figlet FemurTech
+		figlet STRIX.D
 		echo Now Your Termux is back to Original
 		echo "Uninstalled Succesfully"
 		exit 0
@@ -244,21 +244,22 @@ updatedw() {
 		# echo \$var
 		if [[ \$var == *\"up to date\"* ]];
 		then 
-			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech
+			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet STRIX.D
 		else
 			git pull
 			bash setup.sh;
-			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech && echo Restart to apply changes
+			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet STRIX.D && echo Restart to apply changes
 		fi
 	else
-		git clone https://github.com/darkwarrior3/termuxstyling.git
-		cd termuxstyling
+		
+		git clone https://github.com/Strix2109/hack-style.git
+		cd hack-style
 		prm sh
 		clear
 		bash
 		bash setup.sh
 		wait
-		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/termuxstyling/ver.cfg') && figlet FemurTech && echo Restart to apply changes
+		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/termuxstyling/ver.cfg') && figlet STRIX.D && echo Restart to apply changes
 	fi
 	cd \$ppath
 }
@@ -315,13 +316,13 @@ alias fuck=\"printf '\e[0m';figlet FUCK;figlet OFF\"
 alias upg=\"git reset --hard;git pull\"
 alias update=\"apt-get update;apt-get upgrade\"" > /data/data/com.termux/files/usr/etc/bash.bashrc
 cd /$HOME
-cd termuxstyling
+cd hack-style
 echo Script made by
-toilet Dark
-toilet Warrior
+toilet Sant kr.
+toilet (Admin of Strix Cyber Community)
 sleep 2
 mdv README.md
 cd $pdir
-echo Subscribe to our YT channel FemurTech
-echo tinyurl.com/femurtech
+echo Subscribe to our YouTube Channel STRIX.D 
+echo Instagram- @strix_21
 echo Restart to apply changes
