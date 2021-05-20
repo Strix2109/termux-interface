@@ -318,8 +318,8 @@ alias update=\"apt-get update;apt-get upgrade\"" > /data/data/com.termux/files/u
 cd /$HOME
 cd hack-style
 echo Script made by
-toilet Sant kr.
-toilet Admin of Strix Cyber Community
+toilet STRIX
+toilet D
 sleep 2
 mdv README.md
 cd $pdir
