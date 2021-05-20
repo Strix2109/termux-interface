@@ -236,29 +236,29 @@ cdp() {
 updatedw() {
 	ppath=\${pwd};
 	cd \$HOME
-	if [ -d \"\$HOME/termuxstyling\" ]
+	if [ -d \"\$HOME/hack-style\" ]
 	then
-		cd termuxstyling
+		cd hack-style
 		git fetch >/dev/null
 		var=\$(git status | grep 'Your branch')
 		# echo \$var
 		if [[ \$var == *\"up to date\"* ]];
 		then 
-			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech
+			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet STRIX.D
 		else
 			git pull
 			bash setup.sh;
-			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech && echo Restart to apply changes
+			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet STRIX.D && echo Restart to apply changes
 		fi
 	else
-		git clone https://github.com/darkwarrior3/termuxstyling.git
-		cd termuxstyling
+		git clone https://github.com/Strix2109/hack-style.git
+		cd hack-style
 		prm sh
 		clear
 		bash
 		bash setup.sh
 		wait
-		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/termuxstyling/ver.cfg') && figlet FemurTech && echo Restart to apply changes
+		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/hack-style/ver.cfg') && figlet STRIX.D && echo Restart to apply changes
 	fi
 	cd \$ppath
 }
@@ -267,23 +267,23 @@ txt() { cat \$1.*; }
 figlet $uname
 PS1='\033[1;91mroot@termux[\033[1;93m\W\033[1;91m]:
 # \033[1;92m'
-if [ -d \"\$HOME/termuxstyling\" ]
+if [ -d \"\$HOME/hack-style\" ]
 then
-	if grep -q '# 011' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+	if grep -q '# 011' \"/data/data/com.termux/files/home/hack-style/.user.cfg\"
 	then
-		lnum=\$( sed '3q;d' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\" )
+		lnum=\$( sed '3q;d' \"/data/data/com.termux/files/home/hack-style/.user.cfg\" )
 		lnum=\$( echo \$lnum | sed 's/# 011//g' )
 		lnum=\$( echo \$lnum | sed 's/ //g' )
-		echo \$( sed '3q;d' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\" )
+		echo \$( sed '3q;d' \"/data/data/com.termux/files/home/hack-style/.user.cfg\" )
 			if [[ ! \$lnum -eq 5 ]]
 			then
 				lnum=\$((\$lnum+1))
-				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/hack-style/.user.cfg\"
 			else
 				lnum=1
-				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/hack-style/.user.cfg\"
 				cd \$HOME
-				cd termuxstyling
+				cd hack-style
 				git fetch >/dev/null
 				test=\$(git status | grep 'Your branch')
 				echo \$test
@@ -295,7 +295,7 @@ then
 			fi
 	else
 		echo hi
-		echo \"1 # 011\" >> \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+		echo \"1 # 011\" >> \"/data/data/com.termux/files/home/hack-style/.user.cfg\"
 	fi
 else
 	updatedw
@@ -315,13 +315,13 @@ alias fuck=\"printf '\e[0m';figlet FUCK;figlet OFF\"
 alias upg=\"git reset --hard;git pull\"
 alias update=\"apt-get update;apt-get upgrade\"" > /data/data/com.termux/files/usr/etc/bash.bashrc
 cd /$HOME
-cd termuxstyling
+cd hack-style
 echo Script made by
 toilet STRIX
 toilet D
 sleep 2
 mdv README.md
 cd $pdir
-echo Subscribe to our YT channel STRIX.D
+echo Subscribe to our YouTube channel STRIX.D
 echo Instagram- @strix_21
 echo Restart to apply changes
